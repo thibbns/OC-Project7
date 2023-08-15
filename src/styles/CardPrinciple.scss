@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+$colour-primary : #FF6060;
+$background : #F6F6F6;
+
+
+.card-principle{
+    margin-bottom: 50px;
+    position: relative;
+    border-radius: 25px;
+    &:hover{
+        box-shadow: 5px 5px 30px rgb(117, 117, 117);
+    }
+    
+}
+
+.image-container{
+    position: relative;
+    
+    
+}
+
+.image-container__filter{   
+   position: relative;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+    top:0;
+    left: 0;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    
+}
+
+.card-principle img{
+    position:absolute;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+    
+
+}
+
+.card-principle__title{
+position: absolute;
+bottom: 0px;
+    width: 300px;
+    height: 52px;
+    margin: 20px 20px 20px 20px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+
+}

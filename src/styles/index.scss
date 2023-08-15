@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+$colour-primary : #FF6060;
+$background : #F6F6F6;
+
+.background{
+    width: 1240px;
+    border-radius: 25px;
+    background-color: $background;
+    margin : 0 auto 0 auto;
+    padding: 56px 50px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-content: space-between;
+}
+

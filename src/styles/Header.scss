@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+$colour-primary : #FF6060;
+
+@mixin header__links__button($colour : $colour-primary) {
+    color: $colour;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    width: 50%;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1240px;
+    height: 131px;
+    align-items: center;
+    margin: 40px auto 0 auto;
+    padding-bottom: 63px;
+}
+
+.header__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-between;
+    width: 20%;
+}
+
+#logo {
+    height: 68px;
+    padding-bottom: 0;
+}
+
+.header__links__first-button a {
+    @include header__links__button;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+
+.header__links__secondary-button a{
+@include header__links__button;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
