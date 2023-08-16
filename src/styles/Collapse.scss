@@ -10,6 +10,7 @@ $background : #F6F6F6;
 .collapse{
     display: flex;
     flex-direction: column;
+    margin-bottom: 25px;
 }
 
 .collapse__title{
@@ -24,8 +25,8 @@ $background : #F6F6F6;
     position: relative;
     z-index: 1;
 &__text{
-        word-wrap:wrap;
-    word-break: break-all;
+       
+    
     font-family: Montserrat;
     font-size: 24px;
     font-weight:500;
@@ -42,6 +43,7 @@ $background : #F6F6F6;
     width: 1023px;
     position: relative;
     top:-10px;
+    margin-bottom: -10px;
     background-color: $background;
 display: flex;
 justify-content: flex-start;
@@ -51,7 +53,7 @@ border-radius: 0 0 10px 10px;
 .collapse__description__text{
     padding: 30px 20px 20px 20px;
     word-wrap:wrap;
-    word-break: break-all;
+ 
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 400;

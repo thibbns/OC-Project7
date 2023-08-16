@@ -4,7 +4,7 @@ import { useState } from 'react'
 import arrowTop from '../assets/arrow__top.svg'
 import arrowDown from '../assets/arrow__down.svg'
 
-function DropDownLarge({ title, description }) {
+function Collapse({ title, description }) {
   const [isOpen, setIsOpen] = useState(false)
 
   return isOpen ? (
@@ -35,4 +35,4 @@ function DropDownLarge({ title, description }) {
   )
 }
 
-export default DropDownLarge
+export default Collapse
