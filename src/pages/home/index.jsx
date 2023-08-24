@@ -1,4 +1,4 @@
-import { logements } from '../../datas/logements.json'
+import { logements } from '../../datas/logements'
 import '../../styles/normalize.css'
 import '../../styles/index.scss'
 import CardPrinciple from '../../components/CardPrinciple'

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+$colour-primary : #FF6060;
+$background : #F6F6F6;
+
+* {
+    box-sizing: border-box;
+}
+
+.image-gallery{
+    width: 1240px;
+    height: 415px;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.image-gallery__picture{ 
+    width: 1240px;
+    height: 415px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: row;
+    width: 1240px;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.presentation__housing__title{
+    color: $colour-primary;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.presentation__housing__location{
+    color: $colour-primary;
+    font-family: Montserrat;
+    font-size:  18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.presentation__housing__tags{
+    display: flex;
+    flex-direction: row;
+}
+
+.presentation__housing__tags__tag{
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: $colour-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.presentation__housing__tags__tag__text{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size:  14px;
+    font-weight: 500;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 70px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.presentation__host-star__host__name{
+    color: $colour-primary;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    white-space: pre-line;
+    line-height: 140%;
+    margin-right: 10px;
+}
+
+.presentation__host-star__host{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end ;
+}
+
+.presentation__host-star__host__photo +img{
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.collapses{
+    display: flex;
+    flex-direction: row;
+ justify-content: space-between;
+
+ width: 1240px;
+    margin: auto;
+}
+
+div.abcd
+{
+width: 48%;
+}
+
+li
+{
+    list-style-type: none;
+    text-align: left;
+}
+
+ul{
+    padding-left: 0;
+}
+
+

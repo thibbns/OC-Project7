@@ -8,6 +8,7 @@ function About() {
   return (
     <div>
       <Banner banner={aboutBanner} />
+
       <div className="collapse">
         <Collapse
           title={'Fiabilité'}
