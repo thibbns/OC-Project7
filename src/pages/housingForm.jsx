@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import Collapse from '../components/Collapse'
 import '../styles/HousingForm.scss'
 import Rate from '../assets/_Rate.svg'
+import Carousel from '../components/Carousel'
 
 function HousingForm() {
   const [logements, setLogements] = useState([])
@@ -30,16 +31,7 @@ function HousingForm() {
 
   return (
     <div>
-      <div className="image-gallery">
-        {logement.pictures.map((picture, index) => (
-          <img
-            className="image-gallery__picture"
-            key={index}
-            src={picture}
-            alt={`${index + 1}`}
-          />
-        ))}
-      </div>
+      <Carousel />
 
       <div className="presentation">
         <div className="presentation__housing">

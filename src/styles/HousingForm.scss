@@ -7,24 +7,7 @@ $background : #F6F6F6;
     box-sizing: border-box;
 }
 
-.image-gallery{
-    width: 1240px;
-    height: 415px;
-    margin: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-}
 
-.image-gallery__picture{ 
-    width: 1240px;
-    height: 415px;
-    object-fit: cover;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
-}
 
 .presentation{
     display: flex;
@@ -103,22 +86,6 @@ $background : #F6F6F6;
     height: 64px;
     border-radius: 32px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .collapses{
     display: flex;

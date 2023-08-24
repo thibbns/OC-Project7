@@ -1,0 +1,35 @@
+.image-gallery{
+  width: 1240px;
+    height: 415px;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position:relative;
+    margin: auto;
+}
+
+.image-gallery__picture{ 
+    width: 1240px;
+    height: 415px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.arrow-right{
+
+    position: absolute;
+    right: 3%;
+    top:167.5px;
+}
+
+.arrow-left{
+
+    position: absolute;
+    left: 3%;
+    top:167.5px;
+}
