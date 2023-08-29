@@ -4,6 +4,7 @@ import Collapse from '../components/Collapse'
 import '../styles/HousingForm.scss'
 import Rate from '../assets/_Rate.svg'
 import Carousel from '../components/Carousel'
+import Error from '../pages/Error'
 
 function HousingForm() {
   const [logements, setLogements] = useState([])
@@ -24,7 +25,7 @@ function HousingForm() {
   const logement = logements.find((logement) => logement.id === logementId)
 
   if (!logement) {
-    return <div>Logement introuvable</div>
+    return <Error />
   }
 
   const { title, description, location, host } = logement

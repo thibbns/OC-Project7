@@ -1,10 +1,57 @@
 import '../styles/carousel.scss'
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import ArrowRight from '../assets/right-arrow.svg'
-import ArrowLeft from '../assets/left-arrow.svg'
+import ArrowNext from '../assets/right-arrow.svg'
+import ArrowPrev from '../assets/left-arrow.svg'
 
-function Carousel() {
+function Carousel({ items }) {
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? items.length - 1 : prevIndex - 1,
+    )
+  }
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === items.length - 1 ? 0 : prevIndex + 1,
+    )
+  }
+
+  return (
+    <div className="carousel-container">
+      <img
+        className={`arrow-prev ${items.length === 1 ? 'hidden' : ''}`}
+        onClick={handlePrev}
+        src={ArrowPrev}
+        alt="Arrow-left"
+      />
+
+      <div className="carousel">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className={`carousel-item ${
+              index === currentIndex ? 'active' : ''
+            }`}
+          >
+            <img src={item} alt={`a ${index}`} />
+          </div>
+        ))}
+      </div>
+
+      <img
+        className={`arrow-next ${items.length === 1 ? 'hidden' : ''}`}
+        onClick={handleNext}
+        src={ArrowNext}
+        alt="Arrow-right"
+      />
+    </div>
+  )
+}
+
+function FetchCarousel() {
   const [logements, setLogements] = useState([])
   const { logementId } = useParams()
 
@@ -22,35 +69,14 @@ function Carousel() {
   const logement = logements.find((logement) => logement.id === logementId)
 
   if (!logement) {
-    return <div>Logement introuvable</div>
+    return <div>logement introuvable</div>
   }
-  console.log(logement.pictures.length)
-  console.log(logement.pictures[0])
+
   return (
-    <div className="image-gallery">
-      <div className="image-gallery__container">
-        <img
-          className="image-gallery__picture"
-          key={1}
-          src={logement.pictures[0]}
-          alt={`A`}
-        />
-      </div>
-      <img className="arrow-right" src={ArrowRight} alt="Arrow-right" />
-      <img className="arrow-left" src={ArrowLeft} alt="Arrow-left" />
+    <div>
+      <Carousel items={logement.pictures} />
     </div>
   )
 }
 
-export default Carousel
-
-/* {logement.pictures.map((picture, index) => (
-        <img
-          className="image-gallery__picture"
-          key={index}
-          src={pictures[0]}
-          alt={`${index + 1}`}
-        />
-      ))}
-
-      */
+export default FetchCarousel
