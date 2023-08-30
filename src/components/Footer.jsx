@@ -2,8 +2,7 @@ import K from '../assets/K.svg'
 import Group from '../assets/Group.svg'
 import S from '../assets/S.svg'
 import A from '../assets/A.svg'
-import '../styles/normalize.css'
-import '../styles/Footer.scss'
+import '../styles/footer.scss'
 
 function Footer() {
   return (

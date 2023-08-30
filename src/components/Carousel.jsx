@@ -42,7 +42,7 @@ function Carousel({ items }) {
       </div>
 
       <div className="bullet-points">
-        {items.length === 1 ? null : `${currentIndex + 1}/` + `${items.length}`}
+        {items.length === 1 ? null : `${currentIndex + 1}/${items.length}`}
       </div>
 
       <img

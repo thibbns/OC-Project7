@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-$colour-primary : #FF6060;
-$background : #F6F6F6;
-
-* {
-    box-sizing: border-box;
-}
+@import './utils.scss';
+@import './normalize.css';
 
 .collapse{
     display: flex;

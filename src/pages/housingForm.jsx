@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import Collapse from '../components/Collapse'
-import '../styles/HousingForm.scss'
+import '../styles/housingForm.scss'
 import Carousel from '../components/Carousel'
-import Error from '../pages/Error'
+import Error from './Error'
 import Rating from '../components/Rating'
 
 function HousingForm() {

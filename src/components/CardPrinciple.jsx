@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom'
-
-import '../styles/normalize.css'
-import '../styles/CardPrinciple.scss'
+import '../styles/cardPrinciple.scss'
 
 function CardPrinciple({ cover, name, title, id }) {
   return (

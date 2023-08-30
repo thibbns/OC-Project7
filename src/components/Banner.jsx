@@ -1,5 +1,4 @@
-import '../styles/normalize.css'
-import '../styles/Banner.scss'
+import '../styles/banner.scss'
 
 function Banner({ banner, title }) {
   return (

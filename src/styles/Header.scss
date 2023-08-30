@@ -1,10 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-* {
-    box-sizing: border-box;
-}
-
-$colour-primary : #FF6060;
+@import './utils.scss';
+@import './normalize.css';
 
 @mixin header__links__button($colour : $colour-primary) {
     color: $colour;

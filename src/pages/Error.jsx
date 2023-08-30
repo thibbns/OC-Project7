@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import '../styles/normalize.css'
 import '../styles/error.scss'
 
 function Error() {

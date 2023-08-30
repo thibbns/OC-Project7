@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import '../../styles/normalize.css'
 import '../../styles/index.scss'
 import CardPrinciple from '../../components/CardPrinciple'
 import Banner from '../../components/Banner'

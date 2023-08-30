@@ -1,5 +1,4 @@
-import '../styles/normalize.css'
-import '../styles/Collapse.scss'
+import '../styles/collapse.scss'
 import { useState } from 'react'
 import arrowTop from '../assets/arrow__top.svg'
 import arrowDown from '../assets/arrow__down.svg'
