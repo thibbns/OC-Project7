@@ -41,6 +41,10 @@ function Carousel({ items }) {
         ))}
       </div>
 
+      <div className="bullet-points">
+        {items.length === 1 ? null : `${currentIndex + 1}/` + `${items.length}`}
+      </div>
+
       <img
         className={`arrow-next ${items.length === 1 ? 'hidden' : ''}`}
         onClick={handleNext}

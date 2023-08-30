@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import Collapse from '../components/Collapse'
 import '../styles/HousingForm.scss'
-import Rate from '../assets/_Rate.svg'
 import Carousel from '../components/Carousel'
 import Error from '../pages/Error'
+import Rating from '../components/Rating'
 
 function HousingForm() {
   const [logements, setLogements] = useState([])
@@ -28,7 +28,7 @@ function HousingForm() {
     return <Error />
   }
 
-  const { title, description, location, host } = logement
+  const { title, description, location, host, rating } = logement
 
   return (
     <div>
@@ -61,7 +61,7 @@ function HousingForm() {
             <img src={host.picture} alt="1" />
           </div>
           <div className="presentation__host-star__stars"></div>
-          <img src={Rate} alt="rate" />
+          <Rating rating={rating} />
         </div>
       </div>
 
