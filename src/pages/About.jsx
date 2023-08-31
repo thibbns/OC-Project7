@@ -5,7 +5,7 @@ import '../styles/about.scss'
 
 function About() {
   return (
-    <div>
+    <div className="main-wrapper">
       <Banner banner={aboutBanner} />
 
       <div className="collapse">

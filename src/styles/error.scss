@@ -1,7 +1,7 @@
 @import './utils.scss';
 @import './normalize.css';
 
-.error-number{
+.error-number {
     display: flex;
     justify-content: center;
     color: $colour-primary;
@@ -10,7 +10,7 @@
     font-weight: 700;
 }
 
-.error-description{
+.error-description {
     display: flex;
     justify-content: center;
     color: $colour-primary;
@@ -32,6 +32,26 @@
 
 }
 
-a{
+a {
     color: $colour-primary;
+}
+
+
+@media all and (max-width: 992px) {
+
+
+    .error-number {
+        font-size: 96px;
+    }
+
+    .error-description {
+        font-size: 18px;
+        width: 220px;
+    }
+
+    .error-back-home {
+        font-size: 14px;
+    }
+
+
 }

@@ -1,16 +1,30 @@
 @import './utils.scss';
 @import './normalize.css';
 
-.background{
-    width: 1240px;
+.background {
+
+    width: 100%;
     border-radius: 25px;
     background-color: $background;
-    margin : 0 auto 0 auto;
+    margin: 0 auto 0 auto;
     padding: 56px 50px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: space-between;
     align-content: space-between;
 }
 
+@media all and (max-width: 992px) {
+
+    .background {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-bottom: 0%;
+        padding-top: 0%;
+    }
+
+}

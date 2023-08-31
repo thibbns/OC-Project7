@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import Collapse from '../components/Collapse'
 import '../styles/housingForm.scss'
-import Carousel from '../components/Carousel'
+import Carrousel from '../components/Carrousel'
 import Error from './Error'
 import Rating from '../components/Rating'
 
@@ -31,8 +31,8 @@ function HousingForm() {
   const { title, description, location, host, rating } = logement
 
   return (
-    <div>
-      <Carousel />
+    <div className="main-wrapper">
+      <Carrousel />
 
       <div className="presentation">
         <div className="presentation__housing">
@@ -60,16 +60,17 @@ function HousingForm() {
             <div className="presentation__host-star__host__photo"></div>
             <img src={host.picture} alt="1" />
           </div>
-          <div className="presentation__host-star__stars"></div>
-          <Rating rating={rating} />
+          <div className="presentation__host-star__stars">
+            <Rating rating={rating} />
+          </div>
         </div>
       </div>
 
       <div className="collapses">
-        <div className="abcd">
-          <Collapse title={'description'} description={description} />
+        <div className="collapse-container">
+          <Collapse title={'Description'} description={description} />
         </div>
-        <div className="abcd">
+        <div className="collapse-container">
           <Collapse
             title={'Equipements'}
             description={

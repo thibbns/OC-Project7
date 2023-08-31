@@ -1,10 +1,10 @@
-import '../styles/carousel.scss'
+import '../styles/carrousel.scss'
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import ArrowNext from '../assets/right-arrow.svg'
 import ArrowPrev from '../assets/left-arrow.svg'
 
-function Carousel({ items }) {
+function Carrousel({ items }) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const handlePrev = () => {
@@ -20,7 +20,7 @@ function Carousel({ items }) {
   }
 
   return (
-    <div className="carousel-container">
+    <div className="carrousel-container">
       <img
         className={`arrow-prev ${items.length === 1 ? 'hidden' : ''}`}
         onClick={handlePrev}
@@ -28,11 +28,11 @@ function Carousel({ items }) {
         alt="Arrow-left"
       />
 
-      <div className="carousel">
+      <div className="carrousel">
         {items.map((item, index) => (
           <div
             key={index}
-            className={`carousel-item ${
+            className={`carrousel-item ${
               index === currentIndex ? 'active' : ''
             }`}
           >
@@ -55,7 +55,7 @@ function Carousel({ items }) {
   )
 }
 
-function FetchCarousel() {
+function FetchCarrousel() {
   const [logements, setLogements] = useState([])
   const { logementId } = useParams()
 
@@ -78,9 +78,9 @@ function FetchCarousel() {
 
   return (
     <div>
-      <Carousel items={logement.pictures} />
+      <Carrousel items={logement.pictures} />
     </div>
   )
 }
 
-export default FetchCarousel
+export default FetchCarrousel

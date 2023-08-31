@@ -16,39 +16,84 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1240px;
+    margin: 20px 9% 0 9%;
     height: 131px;
     align-items: center;
-    margin: 40px auto 0 auto;
-    padding-bottom: 63px;
+    padding-bottom: 20px;
 }
 
 .header__links {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     justify-content: space-between;
-    width: 20%;
+    width: 220px;
 }
 
 #logo {
     height: 68px;
-    padding-bottom: 0;
 }
 
 .header__links__first-button a {
     @include header__links__button;
-    &:hover{
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.header__links__secondary-button a {
+    @include header__links__button;
+
+    &:hover {
         text-decoration: underline;
     }
 }
 
 
-.header__links__secondary-button a{
-@include header__links__button;
-    &:hover{
-        text-decoration: underline;
+
+
+
+@media all and (max-width: 992px) {
+
+
+    .header {
+        margin: 0 5%;
+        padding-bottom: 0%;
+        height: 100px;
     }
+
+    @mixin header__links__button($colour : $colour-primary) {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .header__links__first-button a {
+        @include header__links__button;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+
+    .header__links__secondary-button a {
+        @include header__links__button;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    #logo {
+        height: 47px;
+        padding-bottom: 0;
+    }
+
+
+    .header__links {
+        width: 130px;
+    }
+
+
+
 }
-
-

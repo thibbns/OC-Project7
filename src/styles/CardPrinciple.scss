@@ -1,46 +1,41 @@
 @import './utils.scss';
 @import './normalize.css';
 
-.card-principle{
+.card-principle {
     margin-bottom: 50px;
     position: relative;
     border-radius: 25px;
-    &:hover{
+
+    &:hover {
         box-shadow: 5px 5px 30px rgb(117, 117, 117);
     }
-    
 }
 
-.image-container{
+.image-container {
     position: relative;
-    
-    
 }
 
-.image-container__filter{   
-   position: relative;
+.image-container__filter {
+    position: relative;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
-    top:0;
+    top: 0;
     left: 0;
     width: 340px;
     height: 340px;
     border-radius: 10px;
-    
 }
 
-.card-principle img{
-    position:absolute;
+.card-principle img {
+    position: absolute;
     width: 340px;
     height: 340px;
     border-radius: 10px;
     object-fit: cover;
-    
-
 }
 
-.card-principle__title{
-position: absolute;
-bottom: 0px;
+.card-principle__title {
+    position: absolute;
+    bottom: 0px;
     width: 300px;
     height: 52px;
     margin: 20px 20px 20px 20px;
@@ -49,5 +44,35 @@ bottom: 0px;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
+}
+
+
+
+
+
+
+
+@media all and (max-width: 992px) {
+
+    .image-container {
+        height: 340px;
+    }
+
+    a {
+        height: 340px;
+    }
+
+    .card-principle img {
+        height: 340px;
+    }
+
+    .card-principle {
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+
 
 }

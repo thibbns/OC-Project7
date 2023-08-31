@@ -2,7 +2,7 @@ function Rating({ rating }) {
   const range = [1, 2, 3, 4, 5]
 
   return (
-    <div>
+    <div className="ratings">
       {range.map((rangeElem) =>
         rating >= rangeElem ? (
           <span key={rangeElem.toString()}>
