@@ -10,9 +10,9 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-
     justify-content: space-between;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .presentation__housing__title {
@@ -34,6 +34,8 @@
 .presentation__housing__tags {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
 .presentation__housing__tags__tag {
@@ -45,6 +47,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .presentation__housing__tags__tag__text {
@@ -78,10 +81,19 @@
     justify-content: flex-end;
 }
 
+
+
 .presentation__host-star__host__photo+img {
     width: 64px;
     height: 64px;
     border-radius: 32px;
+}
+
+.ratings{
+    width: 196px;
+    padding : 0 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .collapses {
@@ -102,10 +114,12 @@ li {
 
 ul {
     padding-left: 0;
+    margin-bottom: 0%;
 }
 
 .presentation__host-star__stars {
     margin: 10px 0;
+    width: 196px;
 }
 
 
@@ -114,11 +128,14 @@ ul {
 
     .main-wrapper {
         margin: 0 5%;
+   
     }
 
     .presentation {
         flex-direction: column;
         width: 100%;
+        margin-bottom: 0; 
+        
     }
 
     .presentation__housing__title {
@@ -144,6 +161,12 @@ ul {
         align-items: center;
     }
 
+    .presentation__host-star__host__photo+img {
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+    }
+
     .presentation__host-star {
         display: flex;
         flex-direction: row-reverse;
@@ -152,10 +175,18 @@ ul {
         margin-bottom: 20px;
     }
 
-    .presentation__host-star__stars>path {
-        height: 12px;
-    }
 
+.presentation__host-star__stars{
+    width: 98px;
+}
+
+
+    .presentation__host-star__stars span{
+        display: flex;
+        justify-content: space-between;
+        width: 13.406px;
+        height: 13px;
+    }
 
     div.collapse-container {
         width: 100%;
@@ -168,9 +199,9 @@ ul {
         flex-direction: column;
     }
 
-    .rating {
-        height: 18px;
-    }
+.ratings{
+    width: 98px;
 
+}
 
 }

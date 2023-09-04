@@ -20,8 +20,8 @@ function Body() {
 
   return (
     <body>
-      <div>
-        <Banner banner={banner} title={'Chez vous, partout et ailleurs'} />
+      <div className="main-wrapper">
+        <Banner banner={banner} title={'Chez vous,\npartout et ailleurs'} />
       </div>
       <div className="background">
         {logements.map(({ cover, host, title, id }) => (
