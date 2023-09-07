@@ -7,23 +7,21 @@ import ArrowPrev from '../assets/left-arrow.svg'
 function Carrousel({ items }) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? items.length - 1 : prevIndex - 1,
-    )
+  const handlePrevious = () => {
+    const newIndex = currentIndex - 1
+    setCurrentIndex(newIndex < 0 ? items.length - 1 : newIndex)
   }
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === items.length - 1 ? 0 : prevIndex + 1,
-    )
+    const newIndex = currentIndex + 1
+    setCurrentIndex(newIndex >= items.length ? 0 : newIndex)
   }
 
   return (
     <div className="carrousel-container">
       <img
         className={`arrow-prev ${items.length === 1 ? 'hidden' : ''}`}
-        onClick={handlePrev}
+        onClick={handlePrevious}
         src={ArrowPrev}
         alt="Arrow-left"
       />
@@ -35,6 +33,9 @@ function Carrousel({ items }) {
             className={`carrousel-item ${
               index === currentIndex ? 'active' : ''
             }`}
+            style={{
+              transform: `translateX(-${currentIndex * 100}%)`,
+            }}
           >
             <img src={item} alt={`a ${index}`} />
           </div>
