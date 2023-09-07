@@ -37,7 +37,7 @@ function Carrousel({ items }) {
               transform: `translateX(-${currentIndex * 100}%)`,
             }}
           >
-            <img src={item} alt={`a ${index}`} />
+            <img src={item} alt={`visuel-logement ${index}`} />
           </div>
         ))}
       </div>

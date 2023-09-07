@@ -9,7 +9,7 @@ function Footer() {
     <div className="footer">
       <div className="footer__logo">
         <img src={K} alt="K" />
-        <img src={Group} alt="Group" />
+        <img src={Group} alt="A" />
         <img src={S} alt="S" />
         <img src={A} alt="A" />
       </div>

@@ -71,7 +71,7 @@ function HousingForm() {
                   {host.name.split(' ')[1]}
                 </div>
                 <div className="presentation__host-star__host__photo"></div>
-                <img src={host.picture} alt="1" />
+                <img src={host.picture} alt="hôte" />
               </div>
               <div className="presentation__host-star__stars">
                 <Rating rating={rating} />
