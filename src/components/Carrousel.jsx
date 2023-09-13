@@ -1,6 +1,5 @@
 import '../styles/carrousel.scss'
-import React, { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import React, { useState } from 'react'
 import ArrowNext from '../assets/right-arrow.svg'
 import ArrowPrev from '../assets/left-arrow.svg'
 
@@ -55,33 +54,4 @@ function Carrousel({ items }) {
     </div>
   )
 }
-
-function FetchCarrousel() {
-  const [logements, setLogements] = useState([])
-  const { logementId } = useParams()
-
-  useEffect(() => {
-    fetch('/logements.json')
-      .then((response) => response.json())
-      .then((data) => {
-        setLogements(data)
-      })
-      .catch((error) => {
-        console.error('erreur', error)
-      })
-  }, [])
-
-  const logement = logements.find((logement) => logement.id === logementId)
-
-  if (!logement) {
-    return <div>logement introuvable</div>
-  }
-
-  return (
-    <div>
-      <Carrousel items={logement.pictures} />
-    </div>
-  )
-}
-
-export default FetchCarrousel
+export default Carrousel

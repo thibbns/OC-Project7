@@ -30,6 +30,11 @@
 
 .collapse__title__arrow {
     cursor: pointer;
+
+    &:active {
+        transform: rotate(90deg);
+        transition: transform 1s;
+    }
 }
 
 .collapse__description {

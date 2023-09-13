@@ -19,7 +19,7 @@ function Body() {
   }, [])
 
   return (
-    <body>
+    <div>
       <div className="main-wrapper">
         <Banner banner={banner} title={'Chez vous,\npartout et ailleurs'} />
       </div>
@@ -28,7 +28,7 @@ function Body() {
           <CardPrinciple id={id} cover={cover} name={host.name} title={title} />
         ))}
       </div>
-    </body>
+    </div>
   )
 }
 
