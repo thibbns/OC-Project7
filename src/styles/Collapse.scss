@@ -31,22 +31,38 @@
 .collapse__title__arrow {
     cursor: pointer;
 
-    &:active {
-        transform: rotate(90deg);
-        transition: transform 1s;
-    }
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center;
 }
 
-.collapse__description {
+.rotate-180{
+    transform: rotate(180deg);
+}
+
+
+
+
+.collapse__description{
+max-height: 0;
+overflow: hidden;
+
+}
+
+
+.collapse__description--open{
+ max-height: 1000px;
+ transition : max-height 0.5s ease;
+
+
     width: 100%;
     position: relative;
-    top: -10px;
-    margin-bottom: -10px;
     background-color: $background;
     display: flex;
     justify-content: flex-start;
     border-radius: 0 0 10px 10px;
+
 }
+
 
 .collapse__description__text {
     padding: 30px 20px 20px 20px;
@@ -55,11 +71,9 @@
     font-size: 24px;
     font-weight: 400;
     color: $colour-primary;
+   
 }
 
-.button {
-    background-color: transparent;
-}
 
 
 
