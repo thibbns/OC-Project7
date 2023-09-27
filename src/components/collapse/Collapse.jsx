@@ -1,6 +1,6 @@
-import '../styles/collapse.scss'
+import '../collapse/collapse.scss'
 import { useState } from 'react'
-import arrowTop from '../assets/arrow__top.svg'
+import arrowTop from '../../assets/arrow__top.svg'
 
 function Collapse({ title, description }) {
   const [isOpen, setIsOpen] = useState(false)

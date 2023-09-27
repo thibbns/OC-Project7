@@ -1,7 +1,7 @@
-import '../styles/carrousel.scss'
+import '../carrousel/carrousel.scss'
 import React, { useState } from 'react'
-import ArrowNext from '../assets/right-arrow.svg'
-import ArrowPrev from '../assets/left-arrow.svg'
+import ArrowNext from '../../assets/right-arrow.svg'
+import ArrowPrev from '../../assets/left-arrow.svg'
 
 function Carrousel({ items }) {
   const [currentIndex, setCurrentIndex] = useState(0)

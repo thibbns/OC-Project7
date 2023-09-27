@@ -1,5 +1,5 @@
-@import './utils.scss';
-@import './normalize.css';
+@import '../../styles/utils.scss';
+@import '../../styles/normalize.css';
 
 @mixin header__links__button($colour : $colour-primary) {
     color: $colour;

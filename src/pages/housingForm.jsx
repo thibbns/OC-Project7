@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import Collapse from '../components/Collapse'
+import Collapse from '../components/collapse/Collapse'
 import '../styles/housingForm.scss'
-import Carrousel from '../components/Carrousel'
+import Carrousel from '../components/carrousel/Carrousel'
 import Error from './Error'
-import Rating from '../components/Rating'
-import Loader from '../components/loader'
+import Rating from '../components/rating/Rating'
+import Loader from '../components/loader/loader'
 
 function HousingForm() {
   const [logements, setLogements] = useState([])

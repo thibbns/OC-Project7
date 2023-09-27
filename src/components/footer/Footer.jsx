@@ -1,8 +1,8 @@
-import K from '../assets/K.svg'
-import Group from '../assets/Group.svg'
-import S from '../assets/S.svg'
-import A from '../assets/A.svg'
-import '../styles/footer.scss'
+import K from '../../assets/K.svg'
+import Group from '../../assets/Group.svg'
+import S from '../../assets/S.svg'
+import A from '../../assets/A.svg'
+import '../footer/footer.scss'
 
 function Footer() {
   return (
