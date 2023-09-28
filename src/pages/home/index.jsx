@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import '../../styles/index.scss'
+import '../home/index.scss'
 import CardPrinciple from '../../components/cardPrinciple/CardPrinciple'
 import Banner from '../../components/banner/Banner'
 import banner from '../../assets/banner.png'
