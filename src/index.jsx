@@ -2,11 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/home/'
-import About from './pages/About'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import HousingForm from './pages/housingForm'
-import Error from './pages/Error'
+import About from './pages/about/About'
+import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
+import HousingForm from './pages/housingForm/housingForm'
+import Error from './pages/error/Error'
 
 ReactDOM.render(
   <React.StrictMode>

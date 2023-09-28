@@ -1,5 +1,5 @@
-@import './utils.scss';
-@import './normalize.css';
+@import '../../utils/utils.scss';
+@import '../../utils/normalize.css';
 
 .collapse {
     display: flex;
@@ -30,30 +30,22 @@
 
 .collapse__title__arrow {
     cursor: pointer;
-
-  transition: transform 0.5s ease-in-out;
-  transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: center;
 }
 
-.rotate-180{
+.rotate-180 {
     transform: rotate(180deg);
 }
 
-
-
-
-.collapse__description{
-max-height: 0;
-overflow: hidden;
-
+.collapse__description {
+    max-height: 0;
+    overflow: hidden;
 }
 
-
-.collapse__description--open{
- max-height: 1000px;
- transition : max-height 0.5s ease;
-
-
+.collapse__description--open {
+    max-height: 1000px;
+    transition: max-height 3s ease;
     width: 100%;
     position: relative;
     background-color: $background;
@@ -63,7 +55,6 @@ overflow: hidden;
 
 }
 
-
 .collapse__description__text {
     padding: 30px 20px 20px 20px;
     word-wrap: wrap;
@@ -71,7 +62,6 @@ overflow: hidden;
     font-size: 24px;
     font-weight: 400;
     color: $colour-primary;
-   
 }
 
 

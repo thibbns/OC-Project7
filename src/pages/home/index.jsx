@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import '../../styles/index.scss'
-import CardPrinciple from '../../components/CardPrinciple'
-import Banner from '../../components/Banner'
+import '../home/index.scss'
+import CardPrinciple from '../../components/cardPrinciple/CardPrinciple'
+import Banner from '../../components/banner/Banner'
 import banner from '../../assets/banner.png'
 
 function Body() {
@@ -24,8 +24,8 @@ function Body() {
         <Banner banner={banner} title={'Chez vous,\npartout et ailleurs'} />
       </div>
       <div className="background">
-        {logements.map(({ cover, host, title, id }) => (
-          <CardPrinciple id={id} cover={cover} name={host.name} title={title} />
+        {logements.map(({ cover, title, id }) => (
+          <CardPrinciple id={id} cover={cover} title={title} key={id} />
         ))}
       </div>
     </div>
