@@ -6,7 +6,7 @@ import '../footer/footer.scss'
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer__logo">
         <img src={K} alt="K" />
         <img src={Group} alt="A" />
@@ -14,7 +14,7 @@ function Footer() {
         <img src={A} alt="A" />
       </div>
       <div className="footer__copyright">© 2020 Kasa. All rights reserved</div>
-    </div>
+    </footer>
   )
 }
 

@@ -37,14 +37,6 @@
   text-align: center;
 }
 
-.banner__container__title {
-  font-size: 48px;
-  font-family: Montserrat;
-  font-weight: 500;
-  color: #FFF;
-}
-
-
 
 @media all and (max-width: 992px) {
 
@@ -53,15 +45,7 @@
     height: 111px;
   }
 
-  .banner__container__title{
-    display: flex;
-    font-size: 24px;
-    font-family: Montserrat;
-    font-weight: 500;
-    color: #FFF;
-    justify-content: flex-start;
-    margin-left: 16px;
-  }
+
 
   .banner img {
     height: 111px;
@@ -77,4 +61,13 @@
  justify-content: flex-start;
  text-align: left;
   }
+
+
+  .banner__container__title h1{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 16px;
+  }
+
+
 }

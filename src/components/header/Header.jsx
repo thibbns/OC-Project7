@@ -4,17 +4,17 @@ import Logo from '../../assets/logo.svg'
 
 function Header() {
   return (
-    <div className="header">
+    <header className="header">
       <img id="logo" src={Logo} alt="logo" />
-      <div className="header__links">
+      <nav className="header__links">
         <div className="header__links__first-button">
           <Link to="/">Accueil</Link>
         </div>
         <div className="header__links__secondary-button">
           <Link to="/a-propos">A propos</Link>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   )
 }
 

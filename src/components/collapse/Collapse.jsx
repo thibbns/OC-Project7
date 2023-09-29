@@ -1,6 +1,6 @@
 import '../collapse/collapse.scss'
 import { useState } from 'react'
-import arrowTop from '../../assets/arrow__top.svg'
+import arrow from '../../assets/arrow.svg'
 
 function Collapse({ title, description }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -10,15 +10,17 @@ function Collapse({ title, description }) {
   }
 
   return (
-    <div className="collapse">
+    <section className="collapse">
       <div className="collapse__title">
-        <div className="collapse__title__text">{title}</div>
+        <div className="collapse__title__text">
+          <h4>{title}</h4>
+        </div>
         <div
           className={`collapse__title__arrow ${isOpen ? 'rotate-180' : ''}`}
           onClick={handleToggle}
         >
           <div>
-            <img src={arrowTop} alt="arrow" />
+            <img src={arrow} alt="arrow" />
           </div>
         </div>
       </div>
@@ -30,7 +32,7 @@ function Collapse({ title, description }) {
       >
         <div className="collapse__description__text">{description}</div>
       </div>
-    </div>
+    </section>
   )
 }
 

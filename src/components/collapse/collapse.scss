@@ -20,12 +20,16 @@
     position: relative;
     z-index: 1;
 
-    &__text {
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 500;
-        color: #FFF;
-    }
+}
+
+
+
+.collapse__title__text--desktop{
+    display: flex;
+}
+
+.collapse__title__text--mobile{
+    display: none;
 }
 
 .collapse__title__arrow {
@@ -75,9 +79,6 @@
         height: 29.931px;
         padding: 0 20px;
 
-        &__text {
-            font-size: 13px;
-        }
     }
 
     .collapse__description__text {
@@ -90,6 +91,12 @@
     }
 
 
-
+    .collapse__title__text--desktop{
+        display: none;
+    }
+    
+    .collapse__title__text--mobile{
+        display: flex;
+    }
 
 }

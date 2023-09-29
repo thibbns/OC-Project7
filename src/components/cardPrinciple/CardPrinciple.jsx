@@ -9,7 +9,9 @@ function CardPrinciple({ cover, name, title, id }) {
           <img src={cover} alt={`${name} cover`} />
           <div className="image-container__filter"> </div>
         </div>
-        <div className="card-principle__title">{title}</div>
+        <div className="card-principle__title">
+          <h2>{title}</h2>
+        </div>
       </Link>
     </div>
   )

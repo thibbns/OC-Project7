@@ -1,3 +1,5 @@
+import '../rating/rating.scss'
+
 function Rating({ rating }) {
   const range = [1, 2, 3, 4, 5]
 

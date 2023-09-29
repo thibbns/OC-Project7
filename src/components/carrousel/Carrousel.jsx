@@ -17,7 +17,7 @@ function Carrousel({ items }) {
   }
 
   return (
-    <div className="carrousel-container">
+    <section className="carrousel-container">
       <img
         className={`arrow-prev ${items.length === 1 ? 'hidden' : ''}`}
         onClick={handlePrevious}
@@ -51,7 +51,7 @@ function Carrousel({ items }) {
         src={ArrowNext}
         alt="Arrow-right"
       />
-    </div>
+    </section>
   )
 }
 export default Carrousel

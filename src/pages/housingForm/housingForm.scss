@@ -15,11 +15,8 @@
     margin-bottom: 20px;
 }
 
-.presentation__housing__title {
-    color: $colour-primary;
-    font-family: Montserrat;
-    font-size: 36px;
-    font-weight: 500;
+.presentation__housing__title h3 {
+margin-top: 0;
     margin-bottom: 5px;
 }
 
@@ -31,70 +28,11 @@
     margin-bottom: 20px;
 }
 
-.presentation__housing__tags {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-
-.presentation__housing__tags__tag {
-    width: 115px;
-    height: 25px;
-    border-radius: 10px;
-    background-color: $colour-primary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.presentation__housing__tags__tag__text {
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 500;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    width: 100px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.presentation__host-star__host__name {
-    color: $colour-primary;
-    text-align: right;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 500;
-    white-space: pre-line;
-    line-height: 140%;
-    margin-right: 10px;
-}
-
-.presentation__host-star__host {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
 
 
 
-.presentation__host-star__host__photo+img {
-    width: 64px;
-    height: 64px;
-    border-radius: 32px;
-}
 
-.ratings{
-    width: 196px;
-    padding : 0 5px;
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .collapses {
     display: flex;
@@ -117,10 +55,7 @@ ul {
     margin-bottom: 0%;
 }
 
-.presentation__host-star__stars {
-    margin: 10px 0;
-    width: 196px;
-}
+
 
 
 @media all and (max-width: 992px) {
@@ -138,34 +73,14 @@ ul {
         
     }
 
-    .presentation__housing__title {
-        font-size: 18px;
-    }
 
     .presentation__housing__location {
         font-size: 14px;
     }
 
-    .presentation__housing__tags__tag__text {
-        font-size: 10px;
-    }
+    
 
-    .presentation__housing__tags__tag {
-        width: 84px;
-        height: 18px;
-    }
-
-    .presentation__host-star__host__name {
-        font-size: 12px;
-        display: flex;
-        align-items: center;
-    }
-
-    .presentation__host-star__host__photo+img {
-        width: 32px;
-        height: 32px;
-        border-radius: 16px;
-    }
+   
 
     .presentation__host-star {
         display: flex;
@@ -176,17 +91,8 @@ ul {
     }
 
 
-.presentation__host-star__stars{
-    width: 98px;
-}
 
 
-    .presentation__host-star__stars span{
-        display: flex;
-        justify-content: space-between;
-        width: 13.406px;
-        height: 13px;
-    }
 
     div.collapse-container {
         width: 100%;
@@ -198,10 +104,4 @@ ul {
         width: 100%;
         flex-direction: column;
     }
-
-.ratings{
-    width: 98px;
-
-}
-
 }

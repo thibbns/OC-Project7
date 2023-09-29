@@ -6,6 +6,8 @@ import Carrousel from '../../components/carrousel/Carrousel'
 import Error from '../error/Error'
 import Rating from '../../components/rating/Rating'
 import Loader from '../../components/loader/loader'
+import Tags from '../../components/tags/Tags'
+import Host from '../../components/host/Host'
 
 function HousingForm() {
   const [logements, setLogements] = useState([])
@@ -45,36 +47,22 @@ function HousingForm() {
   const { title, description, location, host, rating } = logement
 
   return (
-    <div>
+    <article>
       <div className="main-wrapper">
         <Carrousel items={logement.pictures} />
 
         <div className="presentation">
           <div className="presentation__housing">
-            <div className="presentation__housing__title">{title}</div>
+            <div className="presentation__housing__title">
+              <h3>{title}</h3>
+            </div>
             <div className="presentation__housing__location">{location}</div>
-
-            <ul className="presentation__housing__tags">
-              {logement.tags.map((item, index) => (
-                <li className="presentation__housing__tags__tag" key={index}>
-                  <div className="presentation__housing__tags__tag__text">
-                    {item}
-                  </div>
-                </li>
-              ))}
-            </ul>
+            <Tags items={logement.tags} />
           </div>
 
           <div className="presentation__host-star">
-            <div className="presentation__host-star__host">
-              <div className="presentation__host-star__host__name">
-                {host.name.split(' ')[0]}
-                <br />
-                {host.name.split(' ')[1]}
-              </div>
-              <div className="presentation__host-star__host__photo"></div>
-              <img src={host.picture} alt="hôte" />
-            </div>
+            <Host name={host.name} picture={host.picture} />
+
             <div className="presentation__host-star__stars">
               <Rating rating={rating} />
             </div>
@@ -99,7 +87,7 @@ function HousingForm() {
           </div>
         </div>
       </div>
-    </div>
+    </article>
   )
 }
 

@@ -1,0 +1,54 @@
+
+@import '../../utils/utils.scss';
+@import '../../utils/normalize.css';
+
+
+
+.presentation__housing__tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.presentation__housing__tags__tag {
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: $colour-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.presentation__housing__tags__tag__text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+@media all and (max-width: 992px) {
+
+
+    .presentation__housing__tags__tag__text {
+        font-size: 10px;
+    }
+
+    .presentation__housing__tags__tag {
+        width: 84px;
+        height: 18px;
+    }
+
+
+}

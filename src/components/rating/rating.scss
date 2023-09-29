@@ -1,0 +1,38 @@
+
+@import '../../utils/utils.scss';
+@import '../../utils/normalize.css';
+
+.ratings{
+    width: 196px;
+    padding : 0 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.presentation__host-star__stars {
+    margin: 10px 0;
+    width: 196px;
+}
+
+@media all and (max-width: 992px) {
+
+    
+.presentation__host-star__stars{
+    width: 98px;
+}
+
+
+.presentation__host-star__stars span{
+    display: flex;
+    justify-content: space-between;
+    width: 13.406px;
+    height: 13px;
+}
+
+
+.ratings{
+    width: 98px;
+
+}
+
+}
