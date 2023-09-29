@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import '../../utils/normalize.css';
+
 
 $colour-primary : #FF6060;
 $background : #F6F6F6;
@@ -8,55 +10,52 @@ $background : #F6F6F6;
 }
 
 
-h1{
-font-size: 48px;
-font-family: Montserrat;
-font-weight: 500;
-color: #FFF;
+h1 {
+    font-size: 48px;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #FFF;
 }
 
-h2{
-color: #FFF;
-font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
+h2 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
 }
 
-h3{
+h3 {
     color: $colour-primary;
     font-family: Montserrat;
     font-size: 36px;
     font-weight: 500;
-    
 }
 
-
-h4{
+h4 {
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
     color: #FFF;
+    margin: 0 0;
 }
 
 
 
 @media all and (max-width: 992px) {
-h1{
-   
-      font-size: 24px;
-      font-family: Montserrat;
-      font-weight: 500;
-      color: #FFF;
+    h1 {
+        font-size: 24px;
+        font-family: Montserrat;
+        font-weight: 500;
+        color: #FFF;
+    }
 
-}
+    h3 {
+        font-size: 18px;
+    }
 
-h3{
-    font-size: 18px;
-}
-
-h4{
-    font-size: 13px;
-}
+    h4 {
+        font-size: 13px;
+    }
 
 }

@@ -21,14 +21,6 @@
     z-index: 1;
 }
 
-.collapse__title__text--desktop {
-    display: flex;
-}
-
-.collapse__title__text--mobile {
-    display: none;
-}
-
 .collapse__title__arrow {
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
@@ -59,7 +51,7 @@
     padding: 30px 20px 20px 20px;
     word-wrap: wrap;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     color: $colour-primary;
 }
@@ -84,13 +76,5 @@
         height: 18.42px;
     }
 
-
-    .collapse__title__text--desktop {
-        display: none;
-    }
-
-    .collapse__title__text--mobile {
-        display: flex;
-    }
 
 }

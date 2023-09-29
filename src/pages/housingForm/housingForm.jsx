@@ -57,6 +57,7 @@ function HousingForm() {
               <h3>{title}</h3>
             </div>
             <div className="presentation__housing__location">{location}</div>
+
             <Tags items={logement.tags} />
           </div>
 
