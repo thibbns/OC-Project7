@@ -19,16 +19,13 @@
     border-radius: 10px;
     position: relative;
     z-index: 1;
-
 }
 
-
-
-.collapse__title__text--desktop{
+.collapse__title__text--desktop {
     display: flex;
 }
 
-.collapse__title__text--mobile{
+.collapse__title__text--mobile {
     display: none;
 }
 
@@ -56,7 +53,6 @@
     display: flex;
     justify-content: flex-start;
     border-radius: 0 0 10px 10px;
-
 }
 
 .collapse__description__text {
@@ -67,8 +63,6 @@
     font-weight: 400;
     color: $colour-primary;
 }
-
-
 
 
 
@@ -91,11 +85,11 @@
     }
 
 
-    .collapse__title__text--desktop{
+    .collapse__title__text--desktop {
         display: none;
     }
-    
-    .collapse__title__text--mobile{
+
+    .collapse__title__text--mobile {
         display: flex;
     }
 

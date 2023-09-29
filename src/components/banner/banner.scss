@@ -45,28 +45,25 @@
     height: 111px;
   }
 
-
-
   .banner img {
     height: 111px;
     border-radius: 10px;
   }
 
   .banner::before {
-    height :  111px;  
+    height: 111px;
     border-radius: 10px;
   }
 
   .banner__container {
- justify-content: flex-start;
- text-align: left;
+    justify-content: flex-start;
+    text-align: left;
   }
 
-
-  .banner__container__title h1{
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 16px;
+  .banner__container__title h1 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 16px;
   }
 
 

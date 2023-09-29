@@ -16,7 +16,7 @@
 }
 
 .presentation__housing__title h3 {
-margin-top: 0;
+    margin-top: 0;
     margin-bottom: 5px;
 }
 
@@ -27,12 +27,6 @@ margin-top: 0;
     font-weight: 500;
     margin-bottom: 20px;
 }
-
-
-
-
-
-
 
 .collapses {
     display: flex;
@@ -63,24 +57,19 @@ ul {
 
     .main-wrapper {
         margin: 0 5%;
-   
+
     }
 
     .presentation {
         flex-direction: column;
         width: 100%;
-        margin-bottom: 0; 
-        
-    }
+        margin-bottom: 0;
 
+    }
 
     .presentation__housing__location {
         font-size: 14px;
     }
-
-    
-
-   
 
     .presentation__host-star {
         display: flex;
@@ -90,15 +79,10 @@ ul {
         margin-bottom: 20px;
     }
 
-
-
-
-
     div.collapse-container {
         width: 100%;
         margin-bottom: -10px;
     }
-
 
     .collapses {
         width: 100%;

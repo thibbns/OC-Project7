@@ -1,17 +1,16 @@
-
 @import '../../utils/utils.scss';
 @import '../../utils/normalize.css';
 
 
 
-.presentation__housing__tags {
+.tags {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
 }
 
-.presentation__housing__tags__tag {
+.tags__tag {
     width: 115px;
     height: 25px;
     border-radius: 10px;
@@ -23,7 +22,7 @@
     margin-bottom: 10px;
 }
 
-.presentation__housing__tags__tag__text {
+.tags__tag__text {
     color: #FFF;
     font-family: Montserrat;
     font-size: 14px;
@@ -41,11 +40,11 @@
 @media all and (max-width: 992px) {
 
 
-    .presentation__housing__tags__tag__text {
+    .tags__tag__text {
         font-size: 10px;
     }
 
-    .presentation__housing__tags__tag {
+    .tags__tag {
         width: 84px;
         height: 18px;
     }
