@@ -1,6 +1,11 @@
 @import '../../utils/utils.scss';
 @import '../../utils/normalize.css';
 
+.collapses-padding{
+    max-width: 1023px;
+    margin: auto;
+}
+
 .collapse {
     display: flex;
     flex-direction: column;

@@ -1,11 +1,14 @@
 import '../rating/rating.scss'
 
 function Rating({ rating }) {
+  // tableau à parcourir correspondant aux notes possibles
   const range = [1, 2, 3, 4, 5]
 
   return (
     <div className="ratings">
+      {/* on itère sur les valeurs du tableau range  */}
       {range.map((rangeElem) =>
+        // Si rating est superieur ou egal a rangeElem j'ajoute une etoile pleine,
         rating >= rangeElem ? (
           <span key={rangeElem.toString()}>
             {' '}
@@ -23,6 +26,7 @@ function Rating({ rating }) {
             </svg>
           </span>
         ) : (
+          // sinon une etoile vide
           <span key={rangeElem.toString()}>
             {' '}
             <svg
