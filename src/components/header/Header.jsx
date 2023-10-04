@@ -7,12 +7,12 @@ function Header() {
     <header className="header">
       <img id="logo" src={Logo} alt="logo" />
       <nav className="header__links">
-        <div className="header__links__first-button">
+        <button className="header__links__first-button">
           <Link to="/">Accueil</Link>
-        </div>
-        <div className="header__links__secondary-button">
+        </button>
+        <button className="header__links__secondary-button">
           <Link to="/a-propos">A propos</Link>
-        </div>
+        </button>
       </nav>
     </header>
   )
